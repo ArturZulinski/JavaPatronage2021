@@ -11,3 +11,4 @@ Set the values for picked variable.
 Repeat the action for the second variable.
 Next You can pick the action correlated to Your previous choices. Depending on variable You pick, You can either: add, subtract, multiply, divide, power or root.
 The result will be shown on the screen.
+ 
