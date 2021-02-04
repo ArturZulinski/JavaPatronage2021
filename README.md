@@ -5,6 +5,7 @@ The purpose of this task is to create application which will make simple calcula
 The program was written on IntelliJ IDEA Community Edition 2020.2.3 x64 using Java 11.
 
 After starting program You need to choose first variable between real number, vector or matrix.
+  
   -if You pick vector, then You set the size of it using natural numbers, no bigger thaan 4
   -if You pick matrix, then You set 2 sizes of it using natural numbers, no biger than 4
 Set the values for picked variable.
