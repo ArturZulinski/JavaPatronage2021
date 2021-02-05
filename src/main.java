@@ -19,7 +19,7 @@ public class main {
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             choice1 = Integer.parseInt(br.readLine());
-//Chosing the first variant
+//Choosing first option
             switch (choice1) {
                 case 1:     //adding first number
                 System.out.println("What is Your first number:");
@@ -81,15 +81,15 @@ public class main {
 
             BufferedReader br3 = new BufferedReader(new InputStreamReader(System.in));
             choice2 = Integer.parseInt(br3.readLine());
-
+//Choosing second option
             switch (choice2) {
-            case 1:
+            case 1:     //adding second number
                 System.out.println("What is Your second number:");
                 BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
                 val2 = Integer.parseInt(br1.readLine());
                 break;
 
-            case 2:
+            case 2:     //adding second vector
                 System.out.println("What is the size of Your second vector (No bigger then 4):");
                 BufferedReader br2 = new BufferedReader(new InputStreamReader(System.in));
                 int n = Integer.parseInt(br2.readLine());
@@ -107,7 +107,7 @@ public class main {
                 else System.out.printf("Wrong value!!");
                 break;
 
-            case 3:
+            case 3:     //adding second matrix
                 System.out.println("Please enter the rows in the second matrix (No bigger then 4):");
                 Scanner sc = new Scanner(System.in);
                 int row = sc.nextInt();
@@ -138,14 +138,14 @@ public class main {
                 System.out.println("You put the wrong value in!!!");
                 break;
             }
-
+        //When you choose 2 numbers
         if(choice1==1 && choice2==1){
                 System.out.println("What do You want to do with inputted data:\n1.Add\n2.Subtraction\n3.Multiply\n" +
                         "4.Division\n5.Exponentiation (only if second value 0 <= value <= 128)\n6.Square root");
                 BufferedReader br4 = new BufferedReader(new InputStreamReader(System.in));
                 int choice3 = Integer.parseInt(br4.readLine());
 
-                switch(choice3) {
+                switch(choice3) {   //pick the operation
                     case 1:
                         System.out.println("Your result is: "+ (val1+val2));
                         break;
@@ -169,6 +169,7 @@ public class main {
                         break;
                 }
             }
+        //When You choose number and vector
         if(choice1==1 && choice2==2){
             System.out.println("Your only option is to multiply the two.\nYour result is:");
             for (int i = 0; i < v2.length; i++) {
@@ -177,7 +178,7 @@ public class main {
                 }
             }
         }
-
+        //When You chose vector and number
         if(choice1==2 && choice2==1){
             System.out.println("Your only option is to multiply the two.\nYour result is:");
             for (int i = 0; i < v1.length; i++) {
@@ -186,7 +187,7 @@ public class main {
                 }
             }
         }
-
+        //When You choose number and matrix
         if(choice1==1 && choice2==3){
             System.out.println("Your only option is to multiply the two.\nYour result is:");
             for (int r = 0; r < m2.length; r++) {
@@ -197,7 +198,7 @@ public class main {
                 }System.out.println();
             }
         }
-
+        //When You choose matrix and number
         if(choice1==3 && choice2==1){
             System.out.println("Your only option is to multiply the two.\nYour result is:");
             for (int r = 0; r < m1.length; r++) {
@@ -208,14 +209,14 @@ public class main {
                 }System.out.println();
             }
         }
-
+        //When You choose two vectors
         if(choice1==2 && choice2==2){
             System.out.println("What do You want to do with inputted data:\n1.Add\n2.Subtraction");
             BufferedReader br4 = new BufferedReader(new InputStreamReader(System.in));
             int choice3 = Integer.parseInt(br4.readLine());
 
             System.out.println("Your result: ");
-            switch (choice3){
+            switch (choice3){       //Choosing operation
                 case 1:
                     for (int i = 0; i < v2.length; i++) {
                         if(v2[i]!=0){
@@ -235,14 +236,14 @@ public class main {
                     break;
             }
         }
-
+        //When You choose 2 matrices
         if(choice1==3 && choice2==3){
             System.out.println("What do You want to do with inputted data:\n1.Add\n2.Subtraction\n3.Multiply");
             BufferedReader br4 = new BufferedReader(new InputStreamReader(System.in));
             int choice3 = Integer.parseInt(br4.readLine());
 
             System.out.println("Your result:");
-            switch (choice3){
+            switch (choice3){       //Choosing operation
                 case 1:
                     for(int i=0;i<m1.length;i++){
                         for(int j=0;j<m1[0].length;j++){
@@ -275,6 +276,7 @@ public class main {
                     break;
             }
         }
+        //When You choose vector and matrix
         if (choice1==2 && choice2==3){
             double[] result = new double[m2.length];
 
@@ -288,7 +290,7 @@ public class main {
                         }
             }
         }
-
+        //When You choose matrix and vector
         if(choice1==3 && choice2==2){
             double[] result = new double[m1.length];
 
